@@ -1,1 +1,1 @@
-const BASE_URL = 'http://api.tvmaze.com/search/shows?q=pokemon'
+export const BASE_URL = 'http://api.tvmaze.com/search/shows?q=pokemon'

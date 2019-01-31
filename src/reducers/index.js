@@ -1,11 +1,9 @@
 import {
   combineReducers
 } from 'redux-immutable';
+import moviesReducer from './movies';
 
-const reducer = (state = {}, action) => {
-  return state;
-}
 
 export default combineReducers({
-  reducer,
+  movies: moviesReducer
 })
