@@ -1,5 +1,5 @@
 {
   "editor.tabSize": 2,
-  "window.nativeFullScreen": false,
+  "window.nativeFullScreen": true,
   "eslint.autoFixOnSave": true
 }
