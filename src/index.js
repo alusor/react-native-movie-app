@@ -2,6 +2,7 @@ import React from 'react';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Movies from './views/Movies';
+import Movie from './views/Movie';
 
 
 const stack = createStackNavigator({
@@ -9,7 +10,16 @@ const stack = createStackNavigator({
     screen: Movies, navigationOptions: {
       header: null
     }
+  },
+  Movie: {
+    screen: Movie
   }
+}, {
+  transitionConfig: () => ({
+    transitionSpec: {
+      duration: 0,
+    },
+  })
 })
 
 export default createBottomTabNavigator({
